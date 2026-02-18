@@ -16,10 +16,13 @@ header{
     color: #ffffff;
     display: flex;
     position: fixed;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     top: 0;
     left: 0;
+}
+.logo{
+    padding-inline-start: 1.5rem;
 }
 
 .nav-list{
@@ -27,6 +30,7 @@ header{
     justify-content: space-around;
     gap: 5rem;
     padding: .85em;
+    padding-inline-end: 2.5rem;
 }
 
 .nav-list li, li{
@@ -101,11 +105,26 @@ button{
     padding-inline: 0.5rem;
     border-radius: 10px;
     transition: color .4s, background-color .4s;
+    
 }
 
 button:hover{
     color: green;
-    background-color: hsl(330, 3%, 76%);
+    background-color: hsl(60, 94%, 48%);
+    transform: translateY(-2px);
+    transition: transform .2s;
+}
+
+.content-box{
+    width: 100%;
+    min-height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-block-start: 20px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
 }
 
 
